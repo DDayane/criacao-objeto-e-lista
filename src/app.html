@@ -1,0 +1,24 @@
+<template>
+	<lightning-card>
+		<div class="slds-m-around_medium">
+			<h1 class="slds-text-heading_large">Estruturas de Dados</h1><br>
+	<!--chamando as informações do objeto que foi feito em js-->
+				<p>{pessoa.name}</p>
+				<p>{pessoa.tel}</p>
+				<p>{pessoa.idade}</p>
+				<p>{pessoa.status}</p><br>
+	
+
+			<h1 class="slds-text-heading_large">Pokemons</h1><br>
+
+			<template for:each={pokemon} for:item="poke">
+				<div key={poke.cod}>
+				<p>Nome: {poke.nome}, Tipo: {poke.tipo}, Nivel: {poke.nivel}, Cor: {poke.cor}</p>
+				</div>
+			</template>	
+
+		</div>
+	</lightning-card>
+</template>	
+<!--	<div class="slds-m-around_medium">
+			<h1 class="slds-text-heading_large">Pokemons</h1><br>-->
